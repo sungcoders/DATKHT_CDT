@@ -7,7 +7,6 @@
 #define MSI1      6
 #define MSI2      5
 #define MSI3      4
-#define btn_down  
 #define en_up     1
 #define en_down   0
 #define dir_up    1
@@ -15,6 +14,7 @@
 #define low       0
 #define high      1
 
+#define TIME00S   500
 #define TIME01S   1000
 #define TIME05S   5000
 
@@ -36,7 +36,8 @@ void(* resetFunc) (void) = 0;
 void setup()
 {
   Serial.begin(9600);
-  delay(TIME01S);
+  Serial.print('a');
+  delay(TIME00S);
   startup_init();
   setpin();
   GO = EEPROM.read(0);

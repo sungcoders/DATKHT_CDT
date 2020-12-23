@@ -22,7 +22,7 @@ void _steps(boolean dir, int steps,int mode)
     delay(mode);
     (dir==1)?GO+=1:GO-=1;
     read_serial();
-//    click_button();
+    click_button();
   }
   delay(50);
   EEPROM.write(0, GO);
