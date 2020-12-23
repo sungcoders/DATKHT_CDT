@@ -6,7 +6,6 @@ Serial port;
 ControlP5 cp5;
 PFont font;
 
-
 boolean  send = false;
 final boolean debug = true;
 String   msg = "";
