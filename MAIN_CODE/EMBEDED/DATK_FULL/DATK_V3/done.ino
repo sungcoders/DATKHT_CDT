@@ -41,7 +41,7 @@ void click_button()
         if(mode>13) { mode=1; }
         switch(mode)
         {
-          case 1: { Serial.write('a'); lcd16((float)GO/200); Serial.print((float)GO/200); steps_go = 200;}   break;
+          case 1: { Serial.write('a'); lcd16((float)GO/200); Serial.print((float)GO/00); steps_go = 200;}   break;
           case 5: { Serial.write('b'); lcd16((float)GO/200); Serial.print((float)GO/200); steps_go = 200;}   break;
           case 9: { Serial.write('c'); lcd16((float)GO/200); Serial.print((float)GO/200); steps_go = 200;}   break;
           case 13:{ Serial.write('d'); lcd16((float)GO/200); Serial.print((float)GO/200); steps_go = 2;}    break;
